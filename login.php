@@ -1,0 +1,88 @@
+<?php
+echo '
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="book.css">
+        <style>
+            body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+  body{
+        background-image: url("images/background.jpg");
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 100px;
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .container .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+        </style>
+
+    </head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <u><b><a>Registration for Tally Course</a></b></u>
+            <a href="login.html" style="color: red;">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+          <label for="mobile">Mobile Number</label>
+          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          
+          <button type="submit" onclick="alert(\'login successfully\')"> <a href="contact.html">Login </a></button>
+        </form>
+        <div class="register-link">
+          Don\'t have an account? <a href="register.html">Register</a>
+        </div>
+      </div>
+</body>
+</html>
+';
+?>
